@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Tortas Para Todos</title>
+    <link rel="stylesheet" href="actividad2.css"
+</head>
+<body>
+    <h1>Ingrese el primer numero de la división (dividendo)</h1>
+    <input id="input" type="text">
+<h1>ingrese el segundo valor (divisor)</h1>
+<input id="input2" type="text">
+<h1 id="resultado"></h1>
+<h1 id="resultadoescrito"></h1> 
+<button onclick="
+let value1 = document.querySelector('#input').value
+let value2 = document.querySelector('#input2').value
+if (value1/value2>=1){
+let p = document.querySelector('#resultado')
+p.innerHTML = 'es mayor o igual a uno la división'
+let resultadooperacion=value1/value2;
+let a=document.querySelector('#resultadoescrito');
+a.innerHTML= 'El resultado es'+' '+ resultadooperacion;
+}
+else {
+let p = document.querySelector('#resultado')
+p.innerHTML = 'la división es menor que 1'
+let resultadooperacion=value1/value2
+let a=document.querySelector('#resultadoescrito');
+a.innerHTML= 'El resultado es' +' '+ resultadooperacion ;
+}
+"> Verificar </button>
+
+</body>
+</html>
